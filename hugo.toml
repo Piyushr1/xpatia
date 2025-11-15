@@ -1,4 +1,71 @@
 baseURL = 'https://xpatia.in/'
 languageCode = 'en-us'
-title = 'Xpatia - Location Intelligence Platform'
+title = 'Xpatia | Location Intelligence for Smart Business Decisions'
 theme = 'PaperMod'
+
+[params]
+  description = "Location intelligence platform helping businesses make data-driven location decisions using open-source GIS data"
+  author = "Xpatia"
+  
+  # Show reading time and share buttons
+  ShowReadingTime = true
+  ShowShareButtons = true
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = true
+  ShowCodeCopyButtons = false
+  ShowWordCount = true
+  
+  # Homepage mode - show intro section
+  [params.homeInfoParams]
+    Title = "Welcome to Xpatia"
+    Content = """
+    Making location intelligence accessible to every business.
+    
+    We help restaurant chains and retail businesses optimize their location strategy through data-backed insights.
+    
+    📍 Location Audits | 🎯 Site Selection | 📊 Market Analysis
+    """
+
+  # Social links
+  [[params.socialIcons]]
+    name = "linkedin"
+    url = "https://linkedin.com/company/xpatia"
+  
+  [[params.socialIcons]]
+    name = "email"
+    url = "mailto:hello@xpatia.in"
+  
+  [[params.socialIcons]]
+    name = "github"
+    url = "https://github.com/Piyushr1"
+
+# Main menu
+[menu]
+  [[menu.main]]
+    identifier = "home"
+    name = "Home"
+    url = "/"
+    weight = 10
+  
+  [[menu.main]]
+    identifier = "blog"
+    name = "Blog"
+    url = "/posts/"
+    weight = 20
+  
+  [[menu.main]]
+    identifier = "about"
+    name = "About"
+    url = "/about/"
+    weight = 30
+  
+  [[menu.main]]
+    identifier = "services"
+    name = "Services"
+    url = "/services/"
+    weight = 40
+
+# Taxonomies
+[taxonomies]
+  category = 'categories'
+  tag = 'tags'
