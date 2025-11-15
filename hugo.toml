@@ -1,0 +1,4 @@
+baseURL = 'https://xpatia.in/'
+languageCode = 'en-us'
+title = 'Xpatia - Location Intelligence Platform'
+theme = 'PaperMod'
